@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Música actual</title>
+    <link rel="website icon" href="FOTOS/spotify-icon.png">
+</head>
+
+<style>
+
+img:hover:not(.foto){
+    transform: scale(1.2);
+}
+
+img:active:not(.foto){
+    transform: scale(0.95);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(250, 235, 215);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(248, 196, 128);
+    border-radius: 10px;
+}
+.redes{
+    position: fixed;
+    bottom: 0px;
+    background-color: antiquewhite;
+    padding: 35px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+h1{
+    color: red;
+}
+
+.titulo{
+    position: fixed;
+    top: 0;
+    background-color: antiquewhite;
+    width: 100%;
+    color: red;
+    margin-top: 1%;
+}
+
+h2{
+    font-size: larger;
+    font-family: 'Monospace';
+    max-width: fit-content;
+    font-size: 180%;
+}
+
+h2:hover{
+    transform: scale(1.2);
+}
+
+h2:active{
+    transform: scale(0.95);
+}
+
+.indice{
+    list-style: '👉';
+}
+
+.barraeinfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.barra{
+    width: 20%;
+    position: fixed;
+    left: 0%;
+    background-color: antiquewhite;
+    font-size: 180%;
+    margin-left: 1%;
+}
+
+.indice{
+    flex: 1;
+    font-size: 120%;
+    line-height: 1.5;
+    margin-left: 2%;
+}
+
+.info{
+    margin-left: 20%;
+    font-size: 150%;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.link{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.link::before,
+.link::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+
+
+.link::before{
+    top: -1%;
+    transform-origin: left;
+}
+
+.link::after{
+    bottom: -0.5%;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after{
+    transform: scaleX(1);
+}
+
+
+
+</style>
+
+
+<body align="center" style="background-color: antiquewhite; font-family:Arial, Helvetica, sans-serif;"><br>
+
+<div class="barraeinfo">
+<div class="barra">
+    <h1>Últimos lanzamientos.</h1>
+    <nav>
+        <ul class="indice">
+            <li><a href="#Myke" class="link">Myke Towers</a></li>
+            <li><a href="#Eladio" class="link">Eladio Carrión</a></li>
+            <li><a href="#Quevedo" class="link">Quevedo</a></li>
+            <li><a href="#BadBunny" class="link">Bad Bunny</a></li>
+        </ul>
+    </nav>
+</div> <!--Cierra el div de la barra-->
+
+<div class="info">
+
+<a name="Myke">
+<center><a href="Myke.html"><h2 align="center" class="link">Myke Towers</h2></a></center>
+<a href="Myke.html"><img src= "FOTOS/myke towers 2.jpg" width="250" class="foto" title="Información de Myke Towers"/></a>
+<p>Myke Towers ha sacado este 23 de Marzo su último disco, <span style="color:red">"La Vida es una".</span><br>
+Las expectativas sobre este disco son muy altas, ya que este artista lleva más 
+de un año sin sacar uno, siendo el último que publicó "Easy Money Baby", uno delos mejores de género urbano. </p>
+<br>
+
+<a name="Eladio">
+<center><a href="Eladio.html"><h2 align="center" class="link">Eladio Carrión</h2></a></center>
+<a href="Eladio.html"><img src= "FOTOS/Eladio 1.jpg" width="250" class="foto" title="Información de Eladio Carrión"/></a>
+<p>Eladio Carrión lleva dos discos en dos meses, completando la triología que empezó con <span style="color: red;">SEN2 KBRON vol.1</span> y ahora ha completado con <span style="color: red;">SEN2 KBRON vol.2 y 3MEN2 KBRON</span>.<br>Este cantante,camino de convertirse en el artista del año, está ganando popularidad a un ritmo vertiginoso. <br>Destacan las colaboraciones que presenta el disco, con artistas históricos del género urbano, como 50 Cent y Lil Wayne. </p>
+<br>
+
+<a name="Quevedo">
+<center><a href="Quevedo.html"><h2 align="center" class="link">Quevedo</h2></a></center>
+<a href="Quevedo.html"><img src="FOTOS/Quevedo 1.jpg" width="250" class="foto" title="Información de Quevedo"/></a>
+<p>Pedro Domínguez Quevedo es un artista de Gran Canaria. Su último lanzamiento, <span style="color: red;">"Donde Quiero Estar"</span>, un álbum con 16 canciones,<br>incluyendo colaboraciones con <span style="color:red">Cruzz Cafune, Omar Montes, o Myke Towers</span>. Es el artista español del momento a nivel internacional.</p>
+<br>
+
+<a name="BadBunny">
+<center><a href="BadBunny.html"><h2 align="center" class="link">Bad Bunny</h2></a></center>
+<a href="BadBunny.html"><img src="FOTOS/Bad Bunny 1.jpg" width="250" class="foto" title="Información de Bad Buny"/></a>
+<p>Benito Antonio, más conocido como <span style="color: red;">Bad Bunny</span>,es mundialmente conocido por su música.<br>Es considerado por muchos el mejor cantante latino de la historia, ya que lleva estando en la élite desde <span style="color:red">2017</span>.</p>
+<br>
+
+<br><br><br><br><br>
+</div> <!--Cierra el div del índice de la derecha-->
+</div> <!--Cierra el div de todo el contenido-->
+
+<footer>
+<p class="redes" style="padding: 0;">Sigue nuestras redes sociales:<br>
+    <a href="https://open.spotify.com/user/cesarcuestads?si=C2sHucWaR0GMQvfYMYXA6w&utm_source=copy-link&nd=1" target="_blank"><img src="FOTOS/spotify-icon.png" title="Spotify de César" width="20"/></a>
+    <a href="https://twitter.com/IESAndresLaguna" target="_blank"><img src="FOTOS/twitter-icon.png" title="Twitter de IES Andrés Laguna" width="20"/></a>
+    <a href="https://open.spotify.com/user/55v64x85sqe0ljkplg1lpda8z?si=b2d6bd210c0f46e3" target="_blank"><img src="FOTOS/spotify-icon.png" title="Spotify de Herrería" width="20"/></a>
+</p>
+
+</footer>
+
+</body>
+</html>
